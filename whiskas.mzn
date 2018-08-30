@@ -18,13 +18,7 @@ array[1..nr_ingredients] of var float: fat     = [0.080, 0.100, 0.110, 0.010, 0.
 array[1..nr_ingredients] of var float: fibre   = [0.001, 0.005, 0.003, 0.100, 0.150, 0.000];
 array[1..nr_ingredients] of var float: salt    = [0.002, 0.005, 0.007, 0.002, 0.008, 0.000];
  
-constraint weight[1]  >= 0.0;
-constraint weight[2]  >= 0.0;
-constraint weight[3]  >= 0.0;
-constraint weight[4]  >= 0.0;
-constraint weight[5]  >= 0.0;
-constraint weight[6]  >= 0.0;
-
+constraint forall (i in 1..nr_ingredients)(weight[i]  >= 0.0);
 
 constraint sum (i in 1..nr_ingredients)(protein[i]*weight[i]) >= 8.0;
  
