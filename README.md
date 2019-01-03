@@ -15,4 +15,4 @@ OSICBC 2.9/1.16 solves this problem pretty fast.
 Given two rectangles (*Rechteck* in german) and some properties
 find the sizes of the two rectangles.
 
-Should be providing an picture here so it easier to understand.
+Should be providing an picture here so it is easier to understand.
